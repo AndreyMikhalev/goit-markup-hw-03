@@ -47,9 +47,12 @@ address {
   margin-right: auto;
 }
 
-/* ======================================================== */
-/*------------------ header & navigation -------------------*/
+/* ============================================================== */
+/*🔽🔽🔽   H E A D E R  &  N A V I G A T I O N   🔽🔽🔽*/
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -104,11 +107,17 @@ header > a {
   color: var(--prime-text-color);
 }
 
-/*--------------------- main section -----------------------*/
+/*🔽🔽🔽   M A I N   S E C T I O N   🔽🔽🔽*/
 
+/* ----------- hero -------- */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .hero {
   background-color: var(--background-footer-color);
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -117,8 +126,10 @@ header > a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--third-text-color);
-  padding-top: 200px;
-  padding-bottom: 280px;
+
+  margin-bottom: 30px;
+  margin-left: 252px;
+  margin-right: 252px;
 }
 .button {
   font-family: inherit;
@@ -129,6 +140,8 @@ header > a {
   background-color: var(--accent-color);
   color: var(--third-text-color);
   cursor: pointer;
+  margin-left: 500px;
+  margin-right: 500px;
 }
 .button:hover,
 .button:focus {
@@ -136,36 +149,71 @@ header > a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+
+/*--------- features --------- */
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+.feature-item {
+  margin-left: 10px;
+  margin-top: 10px;
+  flex-basis: calc((100% - 40px) / 4);
+}
 .features-title {
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-text-color);
 }
-.features-title p {
+.feature-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-/* --------------------- our job & team -------------------- */
-
-.our-work,
-.our-team {
+/* ----------- our work -----------*/
+.our-work-title,
+.our-team-title {
+  margin-bottom: 50px;
+  margin-left: 396px;
+  margin-right: 396px;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 42px;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
+.our-work {
+  display: flex;
+  justify-content: space-between;
+}
+.our-work-item:not(:last-child) {
+  margin-right: 30px;
+}
+/* ---------- our team ------------ */
 .team-section {
   background-color: #f5f4fa;
 }
+.team.list {
+  display: flex;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-item {
   background-color: #ffffff;
 }
+
 .names {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -174,6 +222,7 @@ header > a {
   color: var(--second-text-color);
 }
 .professions {
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -182,7 +231,7 @@ header > a {
   color: var(--prime-text-color);
 }
 
-/* ------------------------ footer -------------------------- */
+/*🔽🔽🔽   F O O T E R   🔽🔽🔽*/
 
 .footer {
   background-color: var(--background-footer-color);
@@ -202,9 +251,11 @@ header > a {
 .adress.link {
   font-style: normal;
 }
+
 /*==========================================*/
-/*※※※※※※※※ portofolio ※※※※※※※※*/
+/*※※※※※※  P O R T F O L I O  ※※※※※※*/
 /*==========================================*/
+
 .filters {
   font-family: inherit;
   font-weight: 500;
