@@ -5,7 +5,7 @@
   --accent-color: #2196f3;
   --prime-font-family: "Roboto", sans-serif;
   --secondary-font-family: "Raleway", sans-serif;
-  --background-footer-color: #2f303a;
+  --background-color: #2f303a;
 }
 .body {
   font-family: var(--prime-font-family);
@@ -60,6 +60,8 @@ address {
 .navigation {
   display: flex;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .nav-list {
   display: flex;
@@ -79,8 +81,9 @@ address {
 .text-logo {
   color: #000000;
 }
+
 .nav-list-item:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 50px;
 }
 .header-mail {
   margin-left: auto;
@@ -88,6 +91,7 @@ address {
 }
 
 .nav.link {
+  padding: 5px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -115,10 +119,10 @@ header > a {
   padding-bottom: 94px;
 }
 .hero {
-  background-color: var(--background-footer-color);
+  background-color: var(--background-color);
 }
-
-.hero-title {
+/* ЭТО БЫЛА ПЕРВАЯ ВЕРСИЯ КОНТЕНТА В ХИРОУ */
+/* .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -126,7 +130,6 @@ header > a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--third-text-color);
-
   margin-bottom: 30px;
   margin-left: 252px;
   margin-right: 252px;
@@ -142,7 +145,40 @@ header > a {
   cursor: pointer;
   margin-left: 500px;
   margin-right: 500px;
+} */
+/* ДАЛЕЕ ВТОРАЯ */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 106px;
+  padding-bottom: 106px;
 }
+.button {
+  padding: 10px 32px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--third-text-color);
+  cursor: pointer;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--third-text-color);
+  margin-bottom: 30px;
+  margin-left: 252px;
+  margin-right: 252px;
+}
+
 .button:hover,
 .button:focus {
   background: #188ce8;
@@ -153,7 +189,6 @@ header > a {
 /*--------- features --------- */
 .features-list {
   display: flex;
-  flex-wrap: wrap;
   margin-left: -10px;
   margin-top: -10px;
 }
@@ -191,7 +226,6 @@ header > a {
 }
 .our-work {
   display: flex;
-  justify-content: space-between;
 }
 .our-work-item:not(:last-child) {
   margin-right: 30px;
@@ -202,13 +236,16 @@ header > a {
 }
 .team.list {
   display: flex;
+  justify-content: center;
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
-
 .team-item {
   background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .names {
@@ -234,12 +271,15 @@ header > a {
 /*🔽🔽🔽   F O O T E R   🔽🔽🔽*/
 
 .footer {
-  background-color: var(--background-footer-color);
+  background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-text-logo {
   color: var(--third-text-color);
 }
 .adress {
+  margin-top: 20px;
   font-size: 14px;
   line-height: 1.71;
   color: var(--third-text-color);
@@ -256,14 +296,25 @@ header > a {
 /*※※※※※※  P O R T F O L I O  ※※※※※※*/
 /*==========================================*/
 
+/* ----- buttons ------ */
+.filters-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
 .filters {
-  font-family: inherit;
+  padding: 6px 22px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   background-color: #f5f4fa;
+  color: var(--second-text-color);
   cursor: pointer;
+}
+.filters-item:not(:last-child) {
+  margin-right: 8px;
 }
 .filters:hover,
 .filters:focus {
@@ -281,4 +332,10 @@ header > a {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+/* ------- cards list ------ */
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
 }
