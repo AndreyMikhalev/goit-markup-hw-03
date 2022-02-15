@@ -70,7 +70,6 @@ address {
 
 .main.link {
   margin-right: 94px;
-  padding: 22px 0px;
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
@@ -92,7 +91,7 @@ address {
 }
 
 .nav.link {
-  padding: 8px 0px;
+  padding: 32px 0px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -247,13 +246,17 @@ header > a {
 .footer-text-logo {
   color: var(--third-text-color);
 }
-.adress {
+.adress-list {
   margin-top: 20px;
+}
+.adress {
   font-size: 14px;
   line-height: 1.71;
   color: var(--third-text-color);
 }
 .adress.link {
+  display: block;
+  margin-top: 9px;
   color: rgba(255, 255, 255, 0.6);
 }
 .adress,
