@@ -62,8 +62,6 @@ address {
 .navigation {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .nav-list {
   display: flex;
@@ -72,6 +70,7 @@ address {
 
 .main.link {
   margin-right: 94px;
+  padding: 22px 0px;
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
@@ -93,7 +92,7 @@ address {
 }
 
 .nav.link {
-  padding: 5px 0px;
+  padding: 8px 0px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -160,15 +159,13 @@ header > a {
 }
 
 /*--------- features --------- */
+
 .features-list {
   display: flex;
-  margin-left: -10px;
-  margin-top: -10px;
+  justify-content: center;
 }
-.feature-item {
-  margin-left: 10px;
-  margin-top: 10px;
-  flex-basis: calc((100% - 40px) / 4);
+.feature-item:not(:last-child) {
+  margin-right: 30px;
 }
 .features-title {
   margin-bottom: 10px;
