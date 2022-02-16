@@ -85,6 +85,9 @@ address {
 .nav-list-item:not(:last-child) {
   margin-right: 50px;
 }
+.nav-list-item > .nav.link {
+  color: var(--second-text-color);
+}
 .header-mail {
   margin-left: auto;
   margin-right: 50px;
@@ -96,7 +99,7 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--second-text-color);
+  color: var(--prime-text-color);
 }
 .main.link:hover,
 .main.link:focus,
@@ -106,9 +109,6 @@ address {
 .nav.link:focus,
 .nav.link.current {
   color: var(--accent-color);
-}
-header > a {
-  color: var(--prime-text-color);
 }
 
 /*🔽🔽🔽   M A I N   S E C T I O N   🔽🔽🔽*/
@@ -120,8 +120,11 @@ header > a {
 }
 .section.hero {
   background-color: var(--background-color);
+  padding: 200px 0px;
 }
-
+.section.our-work {
+  padding-top: 0px;
+}
 .hero-title {
   margin-bottom: 30px;
   margin-left: 252px;
@@ -159,14 +162,17 @@ header > a {
 
 /*--------- features --------- */
 
-.features-list {
+.feature-list {
   display: flex;
   justify-content: center;
+}
+.feature-item {
+  width: 270px;
 }
 .feature-item:not(:last-child) {
   margin-right: 30px;
 }
-.features-title {
+.feature-title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
@@ -215,10 +221,10 @@ header > a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
+.staff {
+  padding: 30px 0px;
+}
 .names {
-  margin-top: 30px;
-  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -227,7 +233,7 @@ header > a {
   color: var(--second-text-color);
 }
 .professions {
-  margin-bottom: 30px;
+  margin-top: 10px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -272,7 +278,7 @@ header > a {
 .filters-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .filters {
   padding: 6px 22px;
@@ -302,7 +308,7 @@ header > a {
   letter-spacing: 0.06em;
   color: var(--second-text-color);
 }
-.item-type {
+.item-activity {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
